@@ -1,0 +1,20 @@
+{
+  "name": "test-ultrasonic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon test1.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "serialport": "^9.0.1",
+    "socket.io": "^4.7.5"
+  }
+}

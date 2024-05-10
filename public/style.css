@@ -1,0 +1,81 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh; /* Ensure body fills the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.parent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: rgb(0, 115, 115); /* Updated color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Title styles */
+h1 {
+    color: rgb(0, 115, 115); /* Updated color */
+    margin-top: 0;
+    font-size: 28px;
+}
+
+/* Content styles */
+p {
+    color: #555;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Additional styles for specific elements */
+.distance,
+.heartRate,
+.spo2 {
+    color: rgb(0, 115, 115); /* Updated color for all */
+}

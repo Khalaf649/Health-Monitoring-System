@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System</title>
+    <link rel="stylesheet" href="/style.css">
+  
+</head>
+<body>
+    <div class="header">Health Monitoring System</div>
+    <div class="parent">
+        <div class="container">
+            <h1>Check Position</h1>
+            <p class="distance" id="distance">False</p>
+        </div>
+        <div class="container">
+            <h1>Heart Rate</h1>
+            <p class="heartRate" id="heartRate">0 bpm</p>
+        </div>
+        <div class="container">
+            <h1>SPO2</h1>
+            <p class="spo2" id="spo2">0%</p>
+        </div>
+    </div>
+
+    <!-- Include Socket.IO library for real-time updates -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // Connect to the Socket.IO server
+        const socket = io();
+
+        // Listen for 'distance' event emitted by the server
+        socket.on('posture', function(distance) {
+            // Update the distance paragraph with the new distance value
+            document.getElementById('distance').innerText = distance;
+        });
+
+        // Listen for 'heartRate' event emitted by the server
+        socket.on('heartRate', function(heartRate) {
+            // Update the heart rate paragraph with the new value
+            document.getElementById('heartRate').innerText = heartRate + ' bpm';
+        });
+
+        // Listen for 'spo2' event emitted by the server
+        socket.on('spo2', function(spo2) {
+            // Update the SPO2 paragraph with the new value
+            document.getElementById('spo2').innerText = spo2 + '%';
+        });
+    </script>
+</body>
+</html>
