@@ -14,6 +14,7 @@ The system integrates Arduino with Node.js using Express to pass data from the s
 - Node.js
 - Express.js
 - HTML
+- java script
 - CSS
 - WebSocket
 
@@ -45,11 +46,11 @@ The system integrates Arduino with Node.js using Express to pass data from the s
 
 ## Team
 
-- **Project Lead:** Suhila tharwat
-- **Developer:** Abdlrhman Reda khalaf
-- **Developer:** mai mahmoud
-- - **Developer:** zeyad ashraf
-  - - - **Developer:** Momen Mohamed
+- **Project Lead:** Suhila Tharwat
+- **Developer:** Abdelrahman Reda Khalaf
+- **Developer:** Mai Mahmoud
+- **Developer:** Zeyad Ashraf
+- **Developer:** Momen Mohamed
 
 ## Acknowledgements
 
